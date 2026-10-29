@@ -1,0 +1,2317 @@
+
+RIAN JOSE PERCIVAL DE OLIVEIRA
+08:11 (há 2 minutos)
+para mim
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meu Portfólio | Apresentação Pessoal</title>
+
+  <meta name="description"
+    content="Conheça meu portfólio, meus projetos e minhas habilidades.">
+
+  <meta name="theme-color" content="#080b16">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* =========================
+       CONFIGURAÇÕES
+    ========================= */
+
+    :root {
+      --bg: #080b16;
+      --card: #111827;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #8b5cf6;
+      --secondary: #06b6d4;
+      --border: rgba(255,255,255,0.09);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    /* =========================
+       CABEÇALHO
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 11, 22, 0.85);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .menu-btn {
+      display: none;
+      background: transparent;
+      color: white;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       BOTÕES
+    ========================= */
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: 0.3s;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(
+        135deg,
+        var(--primary),
+        #6d28d9
+      );
+      color: white;
+      box-shadow: 0 8px 30px rgba(139,92,246,0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(139,92,246,0.35);
+    }
+
+    .btn-outline {
+      border-color: var(--border);
+      color: white;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-3px);
+    }
+
+    /* =========================
+       APRESENTAÇÃO
+    ========================= */
+
+    .hero {
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 100px 0;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: var(--primary);
+      opacity: 0.13;
+      filter: blur(150px);
+      border-radius: 50%;
+      top: -150px;
+      right: -100px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 15px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      border-radius: 50px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 28px;
+    }
+
+    .status {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 12px #22c55e;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.7rem, 7vw, 5.5rem);
+      line-height: 1.08;
+      letter-spacing: -4px;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(
+        90deg,
+        #a78bfa,
+        #22d3ee
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .socials {
+      display: flex;
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .socials a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: var(--secondary);
+    }
+
+    /* =========================
+       SEÇÕES
+    ========================= */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-header {
+      margin-bottom: 50px;
+    }
+
+    .section-label {
+      color: var(--secondary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.2;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      max-width: 600px;
+      color: var(--muted);
+    }
+
+    /* =========================
+       SOBRE MIM
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .about-card {
+      padding: 35px;
+      background: linear-gradient(
+        145deg,
+        #151b2d,
+        #0e1321
+      );
+      border: 1px solid var(--border);
+      border-radius: 25px;
+    }
+
+    .about-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    .info-item:last-child {
+      border-bottom: none;
+    }
+
+    .info-item span:first-child {
+      color: var(--muted);
+    }
+
+    /* =========================
+       HABILIDADES
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(139,92,246,0.5);
+    }
+
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(139,92,246,0.15);
+      color: #a78bfa;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       PROJETOS
+    ========================= */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(6,182,212,0.5);
+    }
+
+    .project-image {
+      min-height: 220px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(139,92,246,0.3),
+          transparent 60%
+        ),
+        #111827;
+      font-size: 4rem;
+    }
+
+    .project-content {
+      padding: 28px;
+    }
+
+    .project-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .project-content p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .project-tags span {
+      padding: 5px 10px;
+      background: rgba(139,92,246,0.12);
+      color: #c4b5fd;
+      border-radius: 7px;
+      font-size: 0.75rem;
+    }
+
+    .project-link {
+      color: var(--secondary);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       CONTATO
+    ========================= */
+
+    .contact-box {
+      text-align: center;
+      padding: 70px 35px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(139,92,246,0.16),
+          transparent 70%
+        ),
+        var(--card);
+    }
+
+    .contact-box h2 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      max-width: 550px;
+      margin: 0 auto 30px;
+    }
+
+    /* =========================
+       RODAPÉ
+    ========================= */
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    /* =========================
+       ANIMAÇÕES
+    ========================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity 0.7s, transform 0.7s;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       RESPONSIVIDADE
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        background: #0c1020;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero {
+        min-height: 570px;
+        padding: 80px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .contact-box {
+        padding: 45px 20px;
+      }
+
+      .info-item {
+        font-size: 0.82rem;
+      }
+    }
+
+    /* Respeita usuários que preferem menos animações */
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       MENU
+  ========================= -->
+
+  <header>
+    <nav class="container">
+
+      <a href="#inicio" class="logo">
+        MEU<span>.</span>PORTFOLIO
+      </a>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li><a href="#inicio">Início</a></li>
+
+        <li><a href="#sobre">Sobre</a></li>
+
+        <li><a href="#habilidades">Habilidades</a></li>
+
+        <li><a href="#projetos">Projetos</a></li>
+
+        <li><a href="#contato">Contato</a></li>
+
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =========================
+         INÍCIO
+    ========================= -->
+
+    <section class="hero" id="inicio">
+
+      <div class="container">
+
+        <div class="hero-content reveal">
+
+          <div class="tag">
+            <span class="status"></span>
+            Bem-vindo ao meu espaço digital
+          </div>
+
+          <h1>
+            Olá, eu sou<br>
+            <span class="gradient-text">SEU NOME</span>
+          </h1>
+
+          <p>
+            Sou uma pessoa apaixonada por tecnologia,
+            criatividade e novos desafios.
+            Aqui você pode conhecer um pouco sobre mim,
+            minhas habilidades e meus projetos.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#projetos" class="btn btn-primary">
+              Conhecer meus projetos →
+            </a>
+
+            <a href="#contato" class="btn btn-outline">
+              Entrar em contato
+            </a>
+
+          </div>
+
+          <div class="socials">
+
+            <a href="https://github.com/SEUUSUARIO"
+               target="_blank"
+               rel="noopener noreferrer">
+              GitHub ↗
+            </a>
+
+            <a href="https://www.instagram.com/SEUUSUARIO"
+               target="_blank"
+               rel="noopener noreferrer">
+              Instagram ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         SOBRE MIM
+    ========================= -->
+
+    <section id="sobre">
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <div class="section-label">
+            Sobre mim
+          </div>
+
+          <h2 class="section-title">
+            Conheça minha<br>
+            <span class="gradient-text">história</span>
+          </h2>
+
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-text reveal">
+
+            <p>
+              Meu nome é SEU NOME e este é meu
+              espaço de apresentação pessoal.
+            </p>
+
+            <p>
+              Tenho interesse em tecnologia, desenvolvimento
+              de sites, criatividade e aprendizado.
+              Estou sempre buscando novas oportunidades
+              para desenvolver minhas habilidades.
+            </p>
+
+            <p>
+              Este portfólio reúne um pouco do que faço,
+              meus objetivos e os projetos que estou
+              desenvolvendo.
+            </p>
+
+            <a href="#contato" class="btn btn-outline">
+              Vamos conversar →
+            </a>
+
+          </div>
+
+          <div class="about-card reveal">
+
+            <h3>Informações</h3>
+
+            <div class="info-item">
+              <span>Nome</span>
+              <span>SEU NOME</span>
+            </div>
+
+            <div class="info-item">
+              <span>Localização</span>
+              <span>Sua cidade</span>
+            </div>
+
+            <div class="info-item">
+              <span>Área</span>
+              <span>Tecnologia</span>
+            </div>
+
+            <div class="info-item">
+              <span>Objetivo</span>
+              <span>Aprender e evoluir</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         HABILIDADES
+    ========================= -->
+
+    <section id="habilidades">
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <div class="section-label">
+            O que eu faço
+          </div>
+
+          <h2 class="section-title">
+            Minhas <span class="gradient-text">habilidades</span>
+          </h2>
+
+          <p class="section-description">
+            Algumas áreas que fazem parte dos meus
+            interesses e objetivos.
+          </p>
+
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill-card reveal">
+
+            <div class="skill-icon">⌘</div>
+
+            <h3>Desenvolvimento</h3>
+
+            <p>
+              Criação de páginas web, estrutura HTML
+              e desenvolvimento de interfaces.
+            </p>
+
+          </article>
+
+          <article class="skill-card reveal">
+
+            <div class="skill-icon">✦</div>
+
+            <h3>Design</h3>
+
+            <p>
+              Interesse em layouts modernos,
+              organização visual e criatividade.
+            </p>
+
+          </article>
+
+          <article class="skill-card reveal">
+
+            <div class="skill-icon">↗</div>
+
+            <h3>Aprendizado</h3>
+
+            <p>
+              Desenvolvimento de novas habilidades
+              e exploração de tecnologias.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         PROJETOS
+    ========================= -->
+
+    <section id="projetos">
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <div class="section-label">
+            Meu trabalho
+          </div>
+
+          <h2 class="section-title">
+            Projetos em <span class="gradient-text">destaque</span>
+          </h2>
+
+          <p class="section-description">
+            Conheça alguns exemplos de projetos
+            que você pode apresentar neste portfólio.
+          </p>
+
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+
+            <div class="project-image">
+              🌐
+            </div>
+
+            <div class="project-content">
+
+              <h3>Meu primeiro site</h3>
+
+              <p>
+                Um projeto pessoal criado para apresentar
+                minhas informações e meus objetivos.
+              </p>
+
+              <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>GitHub Pages</span>
+
+              </div>
+
+              <a
+                href="https://github.com/SEUUSUARIO"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto ↗
+              </a>
+
+            </div>
+
+          </article>
+
+          <article class="project-card reveal">
+
+            <div class="project-image">
+              💡
+            </div>
+
+            <div class="project-content">
+
+              <h3>Projeto criativo</h3>
+
+              <p>
+                Um espaço para apresentar ideias,
+                experiências e projetos futuros.
+              </p>
+
+              <div class="project-tags">
+
+                <span>Criatividade</span>
+                <span>Design</span>
+                <span>Inovação</span>
+
+              </div>
+
+              <a
+                href="https://github.com/SEUUSUARIO"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto ↗
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         CONTATO
+    ========================= -->
+
+    <section id="contato">
+
+      <div class="container">
+
+        <div class="contact-box reveal">
+
+          <div class="section-label">
+            Contato
+          </div>
+
+          <h2>
+            Vamos criar algo<br>
+            <span class="gradient-text">incrível?</span>
+          </h2>
+
+          <p>
+            Quer conhecer meus projetos,
+            trocar ideias ou entrar em contato?
+            Será um prazer conversar.
+          </p>
+
+          <a
+            href="mailto:SEUEMAIL@EXEMPLO.COM"
+            class="btn btn-primary"
+          >
+            ✉ Enviar mensagem
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================
+       RODAPÉ
+  ========================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <a href="#inicio" class="logo">
+          MEU<span>.</span>PORTFOLIO
+        </a>
+
+        <p>
+          © <span id="year"></span>
+          SEU NOME. Todos os direitos reservados.
+        </p>
+
+        <a href="#inicio" class="project-link">
+          Voltar ao topo ↑
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    // Ano automático no rodapé
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    // Menu para celular
+
+    const menuBtn = document.getElementById("menuBtn");
+
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+
+      const isOpen = navLinks.classList.toggle("open");
+
+      menuBtn.setAttribute("aria-expanded", isOpen);
+
+      menuBtn.setAttribute(
+        "aria-label",
+        isOpen ? "Fechar menu" : "Abrir menu"
+      );
+
+      menuBtn.textContent = isOpen ? "✕" : "☰";
+
+    });
+
+
+    // Fecha o menu ao clicar em uma opção
+
+    navLinks.querySelectorAll("a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navLinks.classList.remove("open");
+
+        menuBtn.setAttribute("aria-expanded", "false");
+
+        menuBtn.setAttribute("aria-label", "Abrir menu");
+
+        menuBtn.textContent = "☰";
+
+      });
+
+    });
+
+
+    // Animação ao aparecer na tela
+
+    const observer = new IntersectionObserver(
+
+      (entries) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            observer.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+
+      {
+        threshold: 0.12
+      }
+
+    );
+
+
+    document.querySelectorAll(".reveal").forEach(element => {
+
+      observer.observe(element);
+
+    });
+
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meu Portfólio | Apresentação Pessoal</title>
+
+  <meta name="description"
+    content="Conheça meu portfólio, meus projetos e minhas habilidades.">
+
+  <meta name="theme-color" content="#080b16">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* =========================
+       CONFIGURAÇÕES
+    ========================= */
+
+    :root {
+      --bg: #080b16;
+      --card: #111827;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #8b5cf6;
+      --secondary: #06b6d4;
+      --border: rgba(255,255,255,0.09);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    /* =========================
+       CABEÇALHO
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 11, 22, 0.85);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .menu-btn {
+      display: none;
+      background: transparent;
+      color: white;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       BOTÕES
+    ========================= */
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: 0.3s;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(
+        135deg,
+        var(--primary),
+        #6d28d9
+      );
+      color: white;
+      box-shadow: 0 8px 30px rgba(139,92,246,0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(139,92,246,0.35);
+    }
+
+    .btn-outline {
+      border-color: var(--border);
+      color: white;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-3px);
+    }
+
+    /* =========================
+       APRESENTAÇÃO
+    ========================= */
+
+    .hero {
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 100px 0;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: var(--primary);
+      opacity: 0.13;
+      filter: blur(150px);
+      border-radius: 50%;
+      top: -150px;
+      right: -100px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 15px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      border-radius: 50px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 28px;
+    }
+
+    .status {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 12px #22c55e;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.7rem, 7vw, 5.5rem);
+      line-height: 1.08;
+      letter-spacing: -4px;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(
+        90deg,
+        #a78bfa,
+        #22d3ee
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .socials {
+      display: flex;
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .socials a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: var(--secondary);
+    }
+
+    /* =========================
+       SEÇÕES
+    ========================= */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-header {
+      margin-bottom: 50px;
+    }
+
+    .section-label {
+      color: var(--secondary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.2;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      max-width: 600px;
+      color: var(--muted);
+    }
+
+    /* =========================
+       SOBRE MIM
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .about-card {
+      padding: 35px;
+      background: linear-gradient(
+        145deg,
+        #151b2d,
+        #0e1321
+      );
+      border: 1px solid var(--border);
+      border-radius: 25px;
+    }
+
+    .about-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    .info-item:last-child {
+      border-bottom: none;
+    }
+
+    .info-item span:first-child {
+      color: var(--muted);
+    }
+
+    /* =========================
+       HABILIDADES
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(139,92,246,0.5);
+    }
+
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(139,92,246,0.15);
+      color: #a78bfa;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       PROJETOS
+    ========================= */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(6,182,212,0.5);
+    }
+
+    .project-image {
+      min-height: 220px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(139,92,246,0.3),
+          transparent 60%
+        ),
+        #111827;
+      font-size: 4rem;
+    }
+
+    .project-content {
+      padding: 28px;
+    }
+
+    .project-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .project-content p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .project-tags span {
+      padding: 5px 10px;
+      background: rgba(139,92,246,0.12);
+      color: #c4b5fd;
+      border-radius: 7px;
+      font-size: 0.75rem;
+    }
+
+    .project-link {
+      color: var(--secondary);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       CONTATO
+    ========================= */
+
+    .contact-box {
+      text-align: center;
+      padding: 70px 35px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(139,92,246,0.16),
+          transparent 70%
+        ),
+        var(--card);
+    }
+
+    .contact-box h2 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      max-width: 550px;
+      margin: 0 auto 30px;
+    }
+
+    /* =========================
+       RODAPÉ
+    ========================= */
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    /* =========================
+       ANIMAÇÕES
+    ========================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity 0.7s, transform 0.7s;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       RESPONSIVIDADE
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        background: #0c1020;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero {
+        min-height: 570px;
+        padding: 80px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .contact-box {
+        padding: 45px 20px;
+      }
+
+      .info-item {
+        font-size: 0.82rem;
+      }
+    }
+
+    /* Respeita usuários que preferem menos animações */
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       MENU
+  ========================= -->
+
+  <header>
+    <nav class="container">
+
+      <a href="#inicio" class="logo">
+        MEU<span>.</span>PORTFOLIO
+      </a>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li><a href="#inicio">Início</a></li>
+
+        <li><a href="#sobre">Sobre</a></li>
+
+        <li><a href="#habilidades">Habilidades</a></li>
+
+        <li><a href="#projetos">Projetos</a></li>
+
+        <li><a href="#contato">Contato</a></li>
+
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =========================
+         INÍCIO
+    ========================= -->
+
+    <section class="hero" id="inicio">
+
+      <div class="container">
+
+        <div class="hero-content reveal">
+
+          <div class="tag">
+            <span class="status"></span>
+            Bem-vindo ao meu espaço digital
+          </div>
+
+          <h1>
+            Olá, eu sou<br>
+            <span class="gradient-text">SEU NOME</span>
+          </h1>
+
+          <p>
+            Sou uma pessoa apaixonada por tecnologia,
+            criatividade e novos desafios.
+            Aqui você pode conhecer um pouco sobre mim,
+            minhas habilidades e meus projetos.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#projetos" class="btn btn-primary">
+              Conhecer meus projetos →
+            </a>
+
+            <a href="#contato" class="btn btn-outline">
+              Entrar em contato
+            </a>
+
+          </div>
+
+          <div class="socials">
+
+            <a href="https://github.com/SEUUSUARIO"
+               target="_blank"
+               rel="noopener noreferrer">
+              GitHub ↗
+            </a>
+
+            <a href="https://www.instagram.com/SEUUSUARIO"
+               target="_blank"
+               rel="noopener noreferrer">
+              Instagram ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         SOBRE MIM
+    ========================= -->
+
+    <section id="sobre">
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <div class="section-label">
+            Sobre mim
+          </div>
+
+          <h2 class="section-title">
+            Conheça minha<br>
+            <span class="gradient-text">história</span>
+          </h2>
+
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-text reveal">
+
+            <p>
+              Meu nome é SEU NOME e este é meu
+              espaço de apresentação pessoal.
+            </p>
+
+            <p>
+              Tenho interesse em tecnologia, desenvolvimento
+              de sites, criatividade e aprendizado.
+              Estou sempre buscando novas oportunidades
+              para desenvolver minhas habilidades.
+            </p>
+
+            <p>
+              Este portfólio reúne um pouco do que faço,
+              meus objetivos e os projetos que estou
+              desenvolvendo.
+            </p>
+
+            <a href="#contato" class="btn btn-outline">
+              Vamos conversar →
+            </a>
+
+          </div>
+
+          <div class="about-card reveal">
+
+            <h3>Informações</h3>
+
+            <div class="info-item">
+              <span>Nome</span>
+              <span>SEU NOME</span>
+            </div>
+
+            <div class="info-item">
+              <span>Localização</span>
+              <span>Sua cidade</span>
+            </div>
+
+            <div class="info-item">
+              <span>Área</span>
+              <span>Tecnologia</span>
+            </div>
+
+            <div class="info-item">
+              <span>Objetivo</span>
+              <span>Aprender e evoluir</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         HABILIDADES
+    ========================= -->
+
+    <section id="habilidades">
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <div class="section-label">
+            O que eu faço
+          </div>
+
+          <h2 class="section-title">
+            Minhas <span class="gradient-text">habilidades</span>
+          </h2>
+
+          <p class="section-description">
+            Algumas áreas que fazem parte dos meus
+            interesses e objetivos.
+          </p>
+
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill-card reveal">
+
+            <div class="skill-icon">⌘</div>
+
+            <h3>Desenvolvimento</h3>
+
+            <p>
+              Criação de páginas web, estrutura HTML
+              e desenvolvimento de interfaces.
+            </p>
+
+          </article>
+
+          <article class="skill-card reveal">
+
+            <div class="skill-icon">✦</div>
+
+            <h3>Design</h3>
+
+            <p>
+              Interesse em layouts modernos,
+              organização visual e criatividade.
+            </p>
+
+          </article>
+
+          <article class="skill-card reveal">
+
+            <div class="skill-icon">↗</div>
+
+            <h3>Aprendizado</h3>
+
+            <p>
+              Desenvolvimento de novas habilidades
+              e exploração de tecnologias.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         PROJETOS
+    ========================= -->
+
+    <section id="projetos">
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <div class="section-label">
+            Meu trabalho
+          </div>
+
+          <h2 class="section-title">
+            Projetos em <span class="gradient-text">destaque</span>
+          </h2>
+
+          <p class="section-description">
+            Conheça alguns exemplos de projetos
+            que você pode apresentar neste portfólio.
+          </p>
+
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+
+            <div class="project-image">
+              🌐
+            </div>
+
+            <div class="project-content">
+
+              <h3>Meu primeiro site</h3>
+
+              <p>
+                Um projeto pessoal criado para apresentar
+                minhas informações e meus objetivos.
+              </p>
+
+              <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>GitHub Pages</span>
+
+              </div>
+
+              <a
+                href="https://github.com/SEUUSUARIO"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto ↗
+              </a>
+
+            </div>
+
+          </article>
+
+          <article class="project-card reveal">
+
+            <div class="project-image">
+              💡
+            </div>
+
+            <div class="project-content">
+
+              <h3>Projeto criativo</h3>
+
+              <p>
+                Um espaço para apresentar ideias,
+                experiências e projetos futuros.
+              </p>
+
+              <div class="project-tags">
+
+                <span>Criatividade</span>
+                <span>Design</span>
+                <span>Inovação</span>
+
+              </div>
+
+              <a
+                href="https://github.com/SEUUSUARIO"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto ↗
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         CONTATO
+    ========================= -->
+
+    <section id="contato">
+
+      <div class="container">
+
+        <div class="contact-box reveal">
+
+          <div class="section-label">
+            Contato
+          </div>
+
+          <h2>
+            Vamos criar algo<br>
+            <span class="gradient-text">incrível?</span>
+          </h2>
+
+          <p>
+            Quer conhecer meus projetos,
+            trocar ideias ou entrar em contato?
+            Será um prazer conversar.
+          </p>
+
+          <a
+            href="mailto:SEUEMAIL@EXEMPLO.COM"
+            class="btn btn-primary"
+          >
+            ✉ Enviar mensagem
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================
+       RODAPÉ
+  ========================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <a href="#inicio" class="logo">
+          MEU<span>.</span>PORTFOLIO
+        </a>
+
+        <p>
+          © <span id="year"></span>
+          SEU NOME. Todos os direitos reservados.
+        </p>
+
+        <a href="#inicio" class="project-link">
+          Voltar ao topo ↑
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    // Ano automático no rodapé
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    // Menu para celular
+
+    const menuBtn = document.getElementById("menuBtn");
+
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+
+      const isOpen = navLinks.classList.toggle("open");
+
+      menuBtn.setAttribute("aria-expanded", isOpen);
+
+      menuBtn.setAttribute(
+        "aria-label",
+        isOpen ? "Fechar menu" : "Abrir menu"
+      );
+
+      menuBtn.textContent = isOpen ? "✕" : "☰";
+
+    });
+
+
+    // Fecha o menu ao clicar em uma opção
+
+    navLinks.querySelectorAll("a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navLinks.classList.remove("open");
+
+        menuBtn.setAttribute("aria-expanded", "false");
+
+        menuBtn.setAttribute("aria-label", "Abrir menu");
+
+        menuBtn.textContent = "☰";
+
+      });
+
+    });
+
+
+    // Animação ao aparecer na tela
+
+    const observer = new IntersectionObserver(
+
+      (entries) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            observer.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+
+      {
+        threshold: 0.12
+      }
+
+    );
+
+
+    document.querySelectorAll(".reveal").forEach(element => {
+
+      observer.observe(element);
+
+    });
+
+  </script>
+
+</body>
+</html>
+
